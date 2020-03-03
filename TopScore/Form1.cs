@@ -16,9 +16,28 @@ namespace TopScore
         {
             InitializeComponent();
         }
+
+
+        Contador clique = new Contador();
+
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            textBox2.Text = clique.Tempo();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = clique.Score();
+            timer1.Start();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            textBox1.Text = clique.ResetarPontos();
+            textBox2.Text = clique.ResetarTempo();
+        }
     }
-
-    Contador clique = new Contador();
-
 }
 
