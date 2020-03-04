@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace TopScore
 {
@@ -29,16 +31,28 @@ namespace TopScore
             return _tempo.ToString();
         }
 
-        public string ResetarPontos()
+        public string ComeçarPontos()
         {
             _pontos = 0;
             return (_pontos).ToString();
         }
 
-        public string ResetarTempo()
+        public string ComeçarTempo()
         {
             _tempo = 60;
             return (_tempo).ToString();
+        }
+        public void Move(object sender)
+        {
+            if (_tempo > 0)
+            {
+                Random r = new Random();
+                int _x = int.Parse(r.Next(500).ToString());
+                int _y = int.Parse(r.Next(250).ToString());
+                Point pt = new Point(_x, _y);
+                Button b = (Button)sender;
+                b.Location = pt;
+            }
         }
     }
 }

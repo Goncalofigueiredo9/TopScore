@@ -118,7 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="20882100_10207761924764913_1417415321791506160_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20882100_10207761924764913_1417415321791506160_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-football-clip-art-soccer-ball-outline-5a848854c8a773.1711777415186350928219" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-football-clip-art-soccer-ball-outline-5a848854c8a773.1711777415186350928219.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="4313d6-20191204-arthounds-dogs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4313d6-20191204-arthounds-dogs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="a584351ad747068aff8e83ed254a8384-ilustra----o-de-bola-de-futebol-by-vexels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a584351ad747068aff8e83ed254a8384-ilustra----o-de-bola-de-futebol-by-vexels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -63,9 +63,40 @@ namespace TopScore.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _20882100_10207761924764913_1417415321791506160_n {
+            get {
+                object obj = ResourceManager.GetObject("20882100_10207761924764913_1417415321791506160_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4313d6_20191204_arthounds_dogs {
             get {
                 object obj = ResourceManager.GetObject("4313d6-20191204-arthounds-dogs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a584351ad747068aff8e83ed254a8384_ilustra____o_de_bola_de_futebol_by_vexels {
+            get {
+                object obj = ResourceManager.GetObject("a584351ad747068aff8e83ed254a8384-ilustra----o-de-bola-de-futebol-by-vexels", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_football_clip_art_soccer_ball_outline_5a848854c8a773_1711777415186350928219 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-football-clip-art-soccer-ball-outline-5a848854c8a773.17117774151863509282" +
+                        "19", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

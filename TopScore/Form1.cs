@@ -19,15 +19,11 @@ namespace TopScore
 
 
         Contador clique = new Contador();
-
-
-        private void Timer1_Tick(object sender, EventArgs e)
-        {
-            textBox2.Text = clique.Tempo();
-        }
+        Contador Classe = new Contador();
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            Classe.Move(sender);
             textBox1.Text = clique.Score();
             timer1.Start();
         }
@@ -35,8 +31,13 @@ namespace TopScore
         private void Button2_Click(object sender, EventArgs e)
         {
             timer1.Stop();
-            textBox1.Text = clique.ResetarPontos();
-            textBox2.Text = clique.ResetarTempo();
+            textBox1.Text = clique.ComeçarPontos();
+            textBox2.Text = clique.ComeçarTempo();
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            textBox2.Text = clique.Tempo();
         }
     }
 }

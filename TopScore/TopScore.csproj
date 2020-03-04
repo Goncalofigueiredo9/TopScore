@@ -84,5 +84,14 @@
   <ItemGroup>
     <None Include="Resources\4313d6-20191204-arthounds-dogs.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20882100_10207761924764913_1417415321791506160_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-football-clip-art-soccer-ball-outline-5a848854c8a773.1711777415186350928219.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a584351ad747068aff8e83ed254a8384-ilustra----o-de-bola-de-futebol-by-vexels.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
