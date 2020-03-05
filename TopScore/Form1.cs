@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace TopScore
 {
@@ -15,6 +16,7 @@ namespace TopScore
         public Form1()
         {
             InitializeComponent();
+            textBox1.Text = Classe.Abrir;
         }
 
 

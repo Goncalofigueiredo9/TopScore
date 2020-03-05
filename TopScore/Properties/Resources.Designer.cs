@@ -100,5 +100,14 @@ namespace TopScore.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 0.
+        /// </summary>
+        internal static string Record {
+            get {
+                return ResourceManager.GetString("Record", resourceCulture);
+            }
+        }
     }
 }

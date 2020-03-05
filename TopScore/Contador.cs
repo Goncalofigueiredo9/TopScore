@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
+using System.IO;
 
 namespace TopScore
 {
@@ -12,7 +13,8 @@ namespace TopScore
     {
         private int _pontos;
         private int _tempo;
-        
+        private string _path = Application.StartupPath + "\\Resources\\Record.txt";
+
         public string Score()
         {
             if (_tempo > 0)
@@ -44,14 +46,39 @@ namespace TopScore
         }
         public void Move(object sender)
         {
-            if (_tempo > 0)
             {
                 Random r = new Random();
                 int _x = int.Parse(r.Next(500).ToString());
                 int _y = int.Parse(r.Next(250).ToString());
                 Point pt = new Point(_x, _y);
                 Button b = (Button)sender;
-                b.Location = pt;
+                b.Location = pt; 
+            }
+        }
+        public string Abrir
+        {
+            get
+            {
+                string _texto = File.ReadAllText(_path);
+                return _texto;
+            }
+        }
+        public void Gravar(string valor)
+        {
+            File.WriteAllText(_path, valor);
+        }
+        public void Record(object pontos, object record)
+        {
+            {
+                TextBox _pontos = (TextBox)pontos;
+                TextBox _record = (TextBox)record;
+                int _max = Convert.ToInt32(_record.Text);
+                int _pts = Convert.ToInt32(_pontos.Text);
+                if (_max < _pts)
+                {
+                    _record.Text = _pontos.Text;
+                    this.Gravar(_record.Text);
+                }
             }
         }
     }

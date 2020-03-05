@@ -93,5 +93,10 @@
   <ItemGroup>
     <None Include="Resources\a584351ad747068aff8e83ed254a8384-ilustra----o-de-bola-de-futebol-by-vexels.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

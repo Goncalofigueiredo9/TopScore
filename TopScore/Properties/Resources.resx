@@ -130,4 +130,7 @@
   <data name="a584351ad747068aff8e83ed254a8384-ilustra----o-de-bola-de-futebol-by-vexels" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a584351ad747068aff8e83ed254a8384-ilustra----o-de-bola-de-futebol-by-vexels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Record" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Record.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
 </root>
