@@ -16,16 +16,15 @@ namespace TopScore
         public Form1()
         {
             InitializeComponent();
-            textBox1.Text = Classe.Abrir;
+            textBox1.Text = clique.Abrir;
         }
 
 
         Contador clique = new Contador();
-        Contador Classe = new Contador();
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Classe.Move(sender);
+            clique.Move(sender);
             textBox1.Text = clique.Score();
             timer1.Start();
         }
@@ -40,6 +39,8 @@ namespace TopScore
         private void Timer1_Tick(object sender, EventArgs e)
         {
             textBox2.Text = clique.Tempo();
+            clique.Gravar();
+            Record.Text = clique.Ler;
         }
     }
 }

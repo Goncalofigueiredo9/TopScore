@@ -13,7 +13,8 @@ namespace TopScore
     {
         private int _pontos;
         private int _tempo;
-        private string _path = Application.StartupPath + "\\Resources\\Record.txt";
+        private static string _path = Application.StartupPath + "\\Resources\\Record.txt";
+        private int _rec = Int32.Parse(File.ReadAllText(_path));
 
         public string Score()
         {
@@ -79,6 +80,21 @@ namespace TopScore
                     _record.Text = _pontos.Text;
                     this.Gravar(_record.Text);
                 }
+            }
+        }
+        public void Gravar()
+        {
+            if (_pontos > _rec)
+            {
+                File.WriteAllText(_path, _pontos.ToString());
+            }
+        }
+        public string Ler
+        {
+            get
+            {
+                _rec = Int32.Parse(File.ReadAllText(_path));
+                return _rec.ToString();
             }
         }
     }
